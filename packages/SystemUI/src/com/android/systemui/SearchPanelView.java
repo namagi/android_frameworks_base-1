@@ -168,7 +168,7 @@ public class SearchPanelView extends FrameLayout implements
 
         if (isScreenLarge() || isScreenPortrait()) {
             mStartPosOffset =  1;
-            mEndPosOffset = 4;
+            mEndPosOffset = 6;
         } else {
             mStartPosOffset = 3;
             mEndPosOffset =  2;

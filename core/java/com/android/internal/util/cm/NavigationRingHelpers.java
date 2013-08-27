@@ -41,7 +41,7 @@ import com.android.internal.widget.multiwaveview.TargetDrawable;
 import java.net.URISyntaxException;
 
 public class NavigationRingHelpers {
-    public static final int MAX_ACTIONS = 3;
+    public static final int MAX_ACTIONS = 5;
 
     private static final String ASSIST_ICON_METADATA_NAME = "com.android.systemui.action_assist_icon";
 
@@ -162,7 +162,7 @@ public class NavigationRingHelpers {
         Drawable iconBgActivated = res.getDrawable(
                 com.android.internal.R.drawable.ic_navigation_ring_blank_activated);
 
-        int margin = (int)(iconBg.getIntrinsicHeight() / 3);
+        int margin = (int)(iconBg.getIntrinsicHeight() / MAX_ACTIONS);
         LayerDrawable icon = new LayerDrawable (new Drawable[] { iconBg, activityIcon });
         LayerDrawable iconActivated = new LayerDrawable (new Drawable[] { iconBgActivated, activityIcon });
 
