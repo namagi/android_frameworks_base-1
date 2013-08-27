@@ -294,9 +294,9 @@ public class Clock extends TextView implements OnClickListener, OnLongClickListe
 
     @Override
     public void onClick(View v) {
-        // start com.android.deskclock/.DeskClock
+        // start com.android.deskclock/.AlarmClock
         ComponentName clock = new ComponentName("com.android.deskclock",
-                "com.android.deskclock.DeskClock");
+                "com.android.deskclock.AlarmClock");
         Intent intent = new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER)
                 .setComponent(clock);
         collapseStartActivity(intent);
